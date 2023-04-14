@@ -21,7 +21,7 @@ export const TableHead = styled.thead`
 `;
 export const TableRow = styled.tr`
   background-color: ${({ index }) =>
-    index % 2 === 1 ? '#f5f5f5' : 'transparent'};
+    index % 2 === 1 ? 'transparent' : '#fff'};
 `;
 export const Section = styled.section`
   display: flex;
