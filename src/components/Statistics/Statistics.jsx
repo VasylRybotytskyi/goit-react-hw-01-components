@@ -7,15 +7,15 @@ import {
   StatsList,
   Title,
 } from './Statistics.styled';
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title = 'Upload stats', stats }) => {
   return (
     <StatisticsWrapper>
-      <Title>Upload stats</Title>
+      {title && <Title>{title}</Title>}
       <StatsList>
         {stats.map(item => (
           <Item key={item.id}>
-            <Label className="label">{item.label}</Label>
-            <Percentage className="percentage">{item.percentage}%</Percentage>
+            <Label>{item.label}</Label>
+            <Percentage>{item.percentage}%</Percentage>
           </Item>
         ))}
       </StatsList>
