@@ -7,7 +7,7 @@ import {
   StatsList,
   Title,
 } from './Statistics.styled';
-export const Statistics = ({ title = 'Upload stats', stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsWrapper>
       {title && <Title>{title}</Title>}
